@@ -14,15 +14,18 @@ let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
 
-botaoIniciar.addEventListener('click', iniciaJogo);
+botaoIniciar.addEventListener("click", iniciaJogo);
 
 function iniciaJogo() {
     atual = 0;
     historiaFinal = "";
-    telaInicial.style.display = 'none';
-    caixaPerguntas.classList.remove("mostrar");
-    caixaAlternativas.classList.remove("mostrar");
+
+    telaInicial.style.display = "none";
+
+    caixaPerguntas.classList.add("mostrar");
+    caixaAlternativas.classList.add("mostrar");
     caixaResultado.classList.remove("mostrar");
+
     mostraPergunta();
 }
 
